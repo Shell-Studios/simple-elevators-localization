@@ -1,0 +1,11 @@
+{
+  "name": "simple-elevators-localization",
+  "version": "1.0.0",
+  "description": "Community localization files for the Simple Elevators add-on. Add or improve your language.",
+  "scripts": {
+    "sync": "node ./scripts/sync-texts.js"
+  },
+  "author": "ajr-uribe",
+  "license": "MIT",
+  "type": "module"
+}
