@@ -1,0 +1,46 @@
+name: Repository issue
+description: Report a problem with the repository itself, not with a translation.
+title: '[Repo] '
+labels: ['repo', 'needs triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for issues with the repository structure, documentation, workflows, or anything that is not about the translation strings themselves.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Documentation (README, CONTRIBUTING, etc.)
+        - Repository structure or files
+        - GitHub Actions or workflows
+        - language.json or pack configuration
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the issue clearly and concisely.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen instead?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Screenshots, links, or anything else that helps.
+    validations:
+      required: false

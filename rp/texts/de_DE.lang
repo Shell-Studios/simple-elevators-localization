@@ -1,0 +1,19 @@
+pack.description=Füge deiner Welt Aufzugsblöcke hinzu und vergiss langweilige, langsame Treppen! (Erstellt von Shell Studios)
+
+# Groups
+ajr:itemGroup.name.elevators=Aufzüge ajr:itemGroup.name.reinforced_elevators=Verstärkte Aufzüge
+
+# Elevators
+tile.ajr:copper_elevator.name=§nKupferaufzug\n§9Reichweite: 8 Blöcke 
+tile.ajr:iron_elevator.name=§iEisenaufzug\n§9Reichweite: 16 Blöcke 
+tile.ajr:gold_elevator.name=§pGoldaufzug\n§9Reichweite: 24 Blöcke 
+tile.ajr:diamond_elevator.name=§sDiamantaufzug\n§9Reichweite: 34 Blöcke\n§cExplosionsresistent 
+tile.ajr:netherite_elevator.name=§8Netheritaufzug\n§9Reichweite: 40 Blöcke\n§cExplosionsresistent
+
+# Reinforced Elevators
+tile.ajr:copper_elevator_reinforced.name=§nVerstärkter Kupferaufzug\n§9Reichweite: 12 Blöcke\n§cExplosionsresistent 
+tile.ajr:iron_elevator_reinforced.name=§iVerstärkter Eisenaufzug\n§9Reichweite: 20 Blöcke\n§cExplosionsresistent 
+tile.ajr:gold_elevator_reinforced.name=§pVerstärkter Goldaufzug\n§9Reichweite: 28 Blöcke\n§cExplosionsresistent
+
+# Scripting
+script.error.elevator_blocked= §cDer Zielaufzug ist blockiert. Du benötigst 2 Blöcke freien Raum über ihm.\n§6Tipp: Du kannst einen Block als Boden auf den Aufzug setzen, aber lasse 2 Blöcke freien Raum über diesem Block.

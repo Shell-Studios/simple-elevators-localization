@@ -1,0 +1,63 @@
+name: Translation error
+description: Report an incorrect, unclear, or missing translation in an existing language.
+title: '[Translation] '
+labels: ['translation', 'needs triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to report a problem with an existing translation. If you can fix it yourself, opening a Pull Request is faster.
+
+  - type: input
+    id: language
+    attributes:
+      label: Affected language
+      description: The language code of the file containing the error.
+      placeholder: 'es_MX'
+    validations:
+      required: true
+
+  - type: input
+    id: key
+    attributes:
+      label: Translation key
+      description: The key of the string with the error. Do not include the value.
+      placeholder: 'tile.ajr:copper_elevator.name'
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current translation
+      description: Copy the current value exactly as it appears in the file.
+      render: lang
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested
+    attributes:
+      label: Suggested translation
+      description: What should it say instead?
+      render: lang
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Briefly explain why the current translation is wrong or could be improved.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Checklist
+      options:
+        - label: I am a native or fluent speaker of this language.
+          required: false
+        - label: I have checked that no existing issue or PR already covers this.
+          required: true

@@ -1,0 +1,20 @@
+pack.description=Add elevator blocks to your world and forget about boring, slow stairs! (Made by Shell Studios)
+
+## Groups
+ajr:itemGroup.name.elevators=Elevators
+ajr:itemGroup.name.reinforced_elevators=Reinforced Elevators
+
+## Elevators
+tile.ajr:copper_elevator.name=§nCopper Elevator\n§9Range: 8 Blocks
+tile.ajr:iron_elevator.name=§iIron Elevator\n§9Range: 16 Blocks  
+tile.ajr:gold_elevator.name=§pGold Elevator\n§9Range: 24 Blocks
+tile.ajr:diamond_elevator.name=§sDiamond Elevator\n§9Range: 34 Blocks\n§cBlast Resistant
+tile.ajr:netherite_elevator.name=§8Netherite Elevator\n§9Range: 40 Blocks\n§cBlast Resistant
+
+## Reinforced Elevators
+tile.ajr:copper_elevator_reinforced.name=§nReinforced Copper Elevator\n§9Range: 12 Blocks\n§cBlast Resistant
+tile.ajr:iron_elevator_reinforced.name=§iReinforced Iron Elevator\n§9Range: 20 Blocks\n§cBlast Resistant
+tile.ajr:gold_elevator_reinforced.name=§pReinforced Gold Elevator\n§9Range: 28 Blocks\n§cBlast Resistant
+
+## Scripting
+script.error.elevator_blocked=<Simple Elevators: Script Error> §cThe destination elevator is blocked. You need 2 blocks of free air space above it.\n§6Tip: You can place a block on top of the elevator as a floor, but leave 2 blocks of free air space above that block.

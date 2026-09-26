@@ -1,0 +1,20 @@
+pack.description=Ajoutez des ascenseurs à votre monde et oubliez les escaliers ennuyeux et lents ! (Créé par Shell Studios)
+
+## Groups
+ajr:itemGroup.name.elevators=Ascenseur
+ajr:itemGroup.name.reinforced_elevators=Ascenseurs renforcés
+
+## Elevators
+tile.ajr:copper_elevator.name=§n ascenseur en cuivre\n§9Portée: 8 blocs 
+tile.ajr:iron_elevator.name=§iAscenseur en fer\n§9Portée: 16 blocs
+tile.ajr:gold_elevator.name=§pAscenseur doré\n§9Portée: 24 blocs
+tile.ajr:diamond_elevator.name=§sDiamond Elevator\n§9Portée: 34 Blocs\n§cRésistant aux explosions
+tile.ajr:netherite_elevator.name=§8Ascenseur en netherite\n§9Portée: 40 Blocs\n§cRésistant aux explosions
+
+## Reinforced Elevators
+tile.ajr:copper_elevator_reinforced.name=§nAscenseur en cuivre renforcé\n§9Portée: 12 Blocs\n§ccRésistant aux explosions
+tile.ajr:iron_elevator_reinforced.name=§iAscenseur en fer renforcé\n§9Portée: 20 Blocs\n§ccRésistant aux explosions
+tile.ajr:gold_elevator_reinforced.name=§pAscenseur en or renforcé\n§9Portée: 28 Blocs\n§ccRésistant aux explosions
+
+## Scripting
+script.error.elevator_blocked=<Simple Elevators : Erreur de script> §cL'ascenseur de destination est bloqué. Il vous faut 2 blocs d'espace libre au-dessus.\n§6Conseil : Vous pouvez placer un bloc au-dessus de l'ascenseur pour faire office de plancher, mais laissez 2 blocs.

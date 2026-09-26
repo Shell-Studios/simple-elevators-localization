@@ -1,0 +1,28 @@
+## Description
+
+What does this PR change and why?
+
+Fixes: #<issue-number>
+
+## Type of change
+
+- [ ] New translation
+- [ ] Translation fix (typo, phrasing, consistency)
+- [ ] Documentation update
+- [ ] Repository structure or configuration
+
+## Language
+
+Which language(s) does this PR affect?
+
+## Checklist
+
+- [ ] I have read the [Contribution Guide](./CONTRIBUTING.md)
+- [ ] I have not modified the source files (`en_US`, `es_MX`) directly
+- [ ] Placeholders and color codes were preserved
+- [ ] `languages.json` was updated in both packs (if applicable)
+- [ ] I have tested the strings locally (or I cannot and I said so)
+
+## Additional notes
+
+Anything else the reviewer should know.

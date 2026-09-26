@@ -1,0 +1,20 @@
+pack.description=Aggiungi blocchi ascensore al tuo mondo e dimentica le scale noiose e lente! (Realizzato da Shell Studios)
+
+## Groups
+ajr:itemGroup.name.elevators=Ascensori
+ajr:itemGroup.name.reinforced_elevators=Ascensori Rinforzati
+
+## Elevators
+tile.ajr:copper_elevator.name=§nAscensore in Rame\n§9Portata: 8 Blocchi
+tile.ajr:iron_elevator.name=§iAscensore in Ferro\n§9Portata: 16 Blocchi
+tile.ajr:gold_elevator.name=§pAscensore in Oro\n§9Portata: 24 Blocchi
+tile.ajr:diamond_elevator.name=§sAscensore in Diamante\n§9Portata: 34 Blocchi\n§cResistente alle Esplosioni
+tile.ajr:netherite_elevator.name=§8Ascensore in Netherite\n§9Portata: 40 Blocchi\n§cResistente alle Esplosioni
+
+## Reinforced Elevators
+tile.ajr:copper_elevator_reinforced.name=§nAscensore in Rame Rinforzato\n§9Portata: 12 Blocchi\n§cResistente alle Esplosioni
+tile.ajr:iron_elevator_reinforced.name=§iAscensore in Ferro Rinforzato\n§9Portata: 20 Blocchi\n§cResistente alle Esplosioni
+tile.ajr:gold_elevator_reinforced.name=§pAscensore in Oro Rinforzato\n§9Portata: 28 Blocchi\n§cResistente alle Esplosioni
+
+## Scripting
+script.error.elevator_blocked=<Simple Elevators: Errore dello Script> §cL'ascensore di destinazione è bloccato. Sono necessari 2 blocchi di spazio libero sopra di esso.\n§6Suggerimento: Puoi posizionare un blocco sopra l'ascensore come pavimento, ma lascia 2 blocchi di spazio libero sopra quel blocco.

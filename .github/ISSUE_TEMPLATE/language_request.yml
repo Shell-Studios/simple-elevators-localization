@@ -1,0 +1,54 @@
+name: Language request
+description: Request support for a language that is not yet available.
+title: '[Language] '
+labels: ['translation', 'language request']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template if you want a language added but cannot contribute the translation yourself. If you can translate, opening a Pull Request is faster.
+
+  - type: input
+    id: language_code
+    attributes:
+      label: Language code
+      description: The vanilla Bedrock code for the language. See the contribution guide for the list.
+      placeholder: 'ja_JP'
+    validations:
+      required: true
+
+  - type: input
+    id: language_name
+    attributes:
+      label: Language name
+      description: The language name in English, as listed in the Bedrock documentation.
+      placeholder: 'Japanese'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: willing
+    attributes:
+      label: Are you able to help with the translation?
+      options:
+        - 'Yes, I can translate or review'
+        - 'No, I am only requesting it'
+        - 'Maybe, but I would need guidance'
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else that might help, such as regional variants to consider or related languages.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Checklist
+      options:
+        - label: I have checked the language table in the README and confirmed this language is not already supported.
+          required: true

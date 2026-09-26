@@ -1,0 +1,286 @@
+# Contributing to Simple Elevators Localization
+
+Thank you for your interest in contributing to the localization of **[Simple Elevators](https://www.curseforge.com/minecraft-bedrock/addons/simple-elevators)**.
+
+This guide explains how to add a new language, improve existing translations, and submit your work for review.
+
+---
+
+## Before you start
+
+Please read these points before opening a Pull Request:
+
+- You cannot modify the add-on's source code. This repository only contains `.lang` files.
+- Do not translate the **keys**, only the **values** (see [File format](#file-format)).
+- Do not remove or translate **placeholders** (`%s`, `%1`) or **color codes** (`§a`, `§b`, `§l`, `§r`). You may reorder placeholders within a string if your language requires it.
+- Keep files encoded in **UTF-8 without BOM**.
+- Regional variants (`en_GB`, `es_ES`) are open to contribution with more flexibility. Minor adjustments are allowed if they improve accuracy for those locales.
+
+If any of these rules are broken, your PR may be closed without review.
+
+> [!IMPORTANT]
+> The source language files (`en_US` and `es_MX`) must not be modified directly. These strings are the reference from which every other translation is derived, and changing them affects all downstream work.
+>
+> If you spot an error in a source string, do not edit the file. Open an [Issue](../../issues) describing the key, the current value, and the suggested correction. A maintainer will review it and apply the fix if appropriate.
+
+---
+
+## Ways to contribute
+
+You can help in three ways:
+
+1. **Add a new language** that is not yet supported.
+2. **Improve an existing translation** (fix typos, awkward phrasing, inconsistencies).
+3. **Review a machine-translated language** if you are a native speaker.
+
+All three are equally valuable.
+
+---
+
+## Adding a new language
+
+### 1. Fork and clone the repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/simple-elevators-localization.git
+cd simple-elevators-localization
+```
+
+### 2. Create a branch
+
+Use a clear name based on what you are doing:
+
+```bash
+# For a new language
+git checkout -b lang/fr_FR
+
+# To fix an existing language
+git checkout -b fix/es_ES-typos
+
+# To review a machine-translated language
+git checkout -b review/pt_BR
+```
+
+### 3. Copy the base file
+
+Use `en_US.lang` or `es_MX.lang` as the reference. Copy it into both `bp/texts/` and `rp/texts/` and rename it to your target language code.
+
+```
+bp/texts/fr_FR.lang
+rp/texts/fr_FR.lang
+```
+
+If a file does not exist yet in `rp/texts/` but the base does, create it following the same structure.
+
+### 4. Register your language
+
+Add the language code to `languages.json` in **both** `bp/texts/` and `rp/texts/`. Without this, the game will not detect your new translation.
+
+```json
+[
+  "en_US",
+  "es_MX",
+  "fr_FR"
+]
+```
+
+Keep the list alphabetically sorted when possible. Do not remove existing entries.
+
+### 5. Translate the values
+
+Only translate the text **after** the `=`. Never touch the key.
+
+```lang
+tile.ajr:copper_elevator.name=§nCopper Elevator\n§9Range: 8 Blocks
+```
+
+becomes, for French:
+
+```lang
+tile.ajr:copper_elevator.name=§nAscenseur en cuivre\n§9Portée: 8 blocs
+```
+
+Note that the color codes (`§n`, `§9`) and the line break (`\n`) stay exactly where they are. Only the human-readable text changes.
+
+### 6. Test your translation (recommended)
+
+You do not need the add-on's source code to test your strings. Minecraft Bedrock lets you stack resource and behavior packs, and packs applied on top of others override matching keys.
+
+To test your translation:
+
+1. Create a new world and apply the current **Simple Elevators** BP and RP to it.
+2. Create a minimal test pack containing only your `.lang` files and `languages.json` under `texts/`.
+3. Apply your test pack **above** Simple Elevators in both the behavior pack and resource pack lists.
+4. Open the world and check that your strings replace the originals correctly.
+
+If you cannot test locally, that is fine. Mention it in your Pull Request and a maintainer will verify the strings before merging.
+
+### 7. Commit and push
+
+```bash
+git add .
+git commit -m "Add French translation (fr_FR)"
+git push origin lang/fr_FR
+```
+
+### 8. Open a Pull Request
+
+Go to your fork on GitHub and click **Compare & pull request**.
+
+In the description, include:
+
+- The language you added or modified.
+- What you changed.
+- Whether you were able to test the strings locally. If not, say so.
+
+---
+
+## File format
+
+Each line follows this structure:
+
+```
+key=translated value
+```
+
+### Rules
+
+- **Keys** are the part before `=`. Do not translate or rename them.
+- **Placeholders** such as `%s` or `%1` must remain in the string. Their order may be changed to fit your language's grammar. For example, `%1 is blocked` and `El %1 está bloqueado` are both valid, but the placeholder itself must not be removed or renamed. (No placeholders are currently in use, but this rule applies for future strings.)
+- **Color codes** such as `§a`, `§b`, `§l`, `§r` must remain in the string. Like placeholders, their position may be adjusted if your language needs it, but the codes themselves must not be changed, removed, or translated.
+- **Comments** start with `##` and are ignored by the game. Keep the existing comments so other contributors can read the files easily.
+- Do not use `=` inside a translated value. Use `\=` only if strictly necessary.
+- Keep the file in **UTF-8 without BOM**.
+
+### Example
+
+Source (`es_MX.lang`):
+
+```lang
+## Elevators
+tile.ajr:copper_elevator.name=§nElevador de Cobre\n§9Rango: 8 Bloques
+
+## Scripting
+script.error.elevator_blocked=<Simple Elevators: Script Error> §cEl elevador de destino está bloqueado. Necesitas 2 bloques de aire libres por encima.\n§6Tip: Puedes poner un bloque sobre el elevador como piso, pero deja 2 bloques de aire libres sobre ese bloque.
+```
+
+Translation (`en_US.lang`):
+
+```lang
+## Elevators
+tile.ajr:copper_elevator.name=§nCopper Elevator\n§9Range: 8 Blocks
+
+## Scripting
+script.error.elevator_blocked=<Simple Elevators: Script Error> §cThe destination elevator is blocked. You need 2 free air blocks above it.\n§6Tip: You can place a block on top of the elevator as a floor, but leave 2 free air blocks above that block.
+```
+
+---
+
+## Supported language codes
+
+The table below lists the languages currently present in this repository, plus a few vanilla languages that are still missing. If your language shows as **Missing**, you can add it by following this guide.
+
+| Code    | Language              | Type              | Status  |
+|---------|-----------------------|-------------------|---------|
+| `en_US` | English (US)          | Source            | Present |
+| `es_MX` | Mexican Spanish       | Source            | Present |
+| `en_GB` | English (UK)          | Regional variant  | Present |
+| `es_ES` | Spanish (Spain)       | Regional variant  | Present |
+| `de_DE` | German                | Target            | MT      |
+| `fr_FR` | French (France)       | Target            | MT      |
+| `it_IT` | Italian               | Target            | MT      |
+| `pl_PL` | Polish                | Target            | MT      |
+| `pt_BR` | Brazilian Portuguese  | Target            | MT      |
+| `pt_PT` | Portuguese (Portugal) | Target            | MT      |
+| `ja_JP` | Japanese              | Target            | Missing |
+| `ko_KR` | Korean                | Target            | Missing |
+| `nl_NL` | Dutch                 | Target            | Missing |
+| `ru_RU` | Russian               | Target            | Missing |
+| `sv_SE` | Swedish               | Target            | Missing |
+| `tr_TR` | Turkish               | Target            | Missing |
+| `uk_UA` | Ukrainian             | Target            | Missing |
+| `zh_CN` | Chinese (Simplified)  | Target            | Missing |
+| `zh_TW` | Chinese (Traditional) | Target            | Missing |
+
+**Status legend**
+
+- **Present** — A translation exists and has been reviewed. Safe to use.
+- **MT** — Machine-translated with Google Translate. Functional but pending review by a native speaker.
+- **Missing** — No translation file exists yet. You can add it by following this guide.
+
+If your language is not listed here, check the [Bedrock OSS documentation](https://wiki.bedrock.dev/text/text-intro#vanilla-languages) for the correct code before opening a PR. Only vanilla language codes are accepted unless the language is registered with a custom `language_names.json`.
+
+> [!NOTE]
+> Some locales are close enough that duplicating a file is acceptable instead of writing it twice. This repository already does this for `en_US`/`en_GB`, `es_MX`/`es_ES`, and `pt_BR`/`pt_PT`.
+>
+> If you duplicate a peer language, another contributor can later adapt it to their region. For example, if you translate `pt_PT` and copy it to `pt_BR`, someone from Brazil can adjust `pt_BR` to match Brazilian usage.
+
+---
+
+## Style guidelines
+
+These are not strict rules, but following them keeps translations consistent across languages.
+
+- Use the **appropriate tone** for Minecraft: clear, short, and natural.
+- Avoid literal translations that sound robotic.
+- Respect the **original capitalization** when the text is a title or button.
+- If an official Minecraft translation exists for a term, use it.
+- Keep the **length similar** to the original to avoid text being cut off in the UI.
+- Be consistent: if you translate "elevator" one way, use the same word everywhere.
+
+---
+
+## Review process
+
+Once you open a Pull Request:
+
+1. A maintainer will review your changes.
+2. You may be asked to fix formatting, terminology, or style issues.
+3. Once approved, your PR will be merged and your name will be added to the credits.
+
+### What we check
+
+- Correct spelling and grammar in the target language.
+- Compliance with the `.lang` format.
+- Keys, placeholders, and color codes were not modified.
+- Consistent use of terminology.
+- `languages.json` was updated in both packs if a new language was added.
+
+---
+
+## Reporting issues
+
+If you find an error in an existing translation but do not want to fix it yourself, open an [Issue](../../issues) with:
+
+- The affected language.
+- The text key.
+- The current translation.
+- The suggested translation.
+
+---
+
+## Verified Translator role
+
+Contributors who consistently deliver high-quality translations may be granted the **Verified Translator** role on our Discord server. This role is granted in addition to the **Contributor** role, not as a replacement.
+
+### How to qualify
+
+- Have at least two merged Pull Requests with accurate translations.
+- Receive approval from a maintainer after a review pass.
+
+### What the role includes
+
+- Access to a private channel.
+- Early previews of upcoming localization projects.
+- Priority for beta testing.
+- A mention in the add-on credits.
+
+Consistent contributors may also be invited to join the staff team (along with its private Discord server) if they are interested.
+
+---
+
+## Questions
+
+Open a [Discussion](../../discussions) or an [Issue](../../issues). We are happy to help.
+
+Thank you for helping Simple Elevators speak your language.

@@ -1,0 +1,20 @@
+pack.description=¡Agrega bloques elevadores a tu mundo y olvida las aburridas y lentas escaleras! (Hecho por Shell Studios)
+
+## Groups
+ajr:itemGroup.name.elevators=Elevadores
+ajr:itemGroup.name.reinforced_elevators=Elevadores Reforzados
+
+## Elevators
+tile.ajr:copper_elevator.name=§nElevador de Cobre\n§9Rango: 8 Bloques
+tile.ajr:iron_elevator.name=§iElevador de Hierro\n§9Rango: 16 Bloques
+tile.ajr:gold_elevator.name=§pElevador de Oro\n§9Rango: 24 Bloques
+tile.ajr:diamond_elevator.name=§sElevador de Diamante\n§9Rango: 34 Bloques\n§cResistente a las explosiones
+tile.ajr:netherite_elevator.name=§8Elevador de Netherite\n§9Rango: 40 Bloques\n§cResistente a las explosiones
+
+## Reinforced Elevators
+tile.ajr:copper_elevator_reinforced.name=§nElevador de Cobre Reforzado\n§9Rango: 12 Bloques\n§cResistente a las explosiones
+tile.ajr:iron_elevator_reinforced.name=§iElevador de Hierro Reforzado\n§9Rango: 20 Bloques\n§cResistente a las explosiones
+tile.ajr:gold_elevator_reinforced.name=§pElevador de Oro Reforzado\n§9Rango: 28 Bloques\n§cResistente a las explosiones
+
+## Scripting
+script.error.elevator_blocked=<Simple Elevators: Script Error> §cEl elevador de destino está bloqueado. Necesitas 2 bloques de aire libres por encima.\n§6Tip: Puedes poner un bloque sobre el elevador como piso, pero deja 2 bloques de aire libres sobre ese bloque.

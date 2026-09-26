@@ -1,0 +1,20 @@
+pack.description=Dodaj windy do swojego świata i zapomnij o nudnych, powolnych schodach! (Stworzone przez Shell Studios)
+
+## Groups
+ajr:itemGroup.name.elevators=Windy 
+ajr:itemGroup.name.reinforced_elevators=Wzmocnione Windy
+
+## Elevators
+tile.ajr:copper_elevator.name=§nMiedziana Winda\n§9Zasięg: 8 Bloków 
+tile.ajr:iron_elevator.name=§iŻelazna Winda\n§9Zasięg: 16 Bloków 
+tile.ajr:gold_elevator.name=§pZłota Winda\n§9Zasięg: 24 Bloki 
+tile.ajr:diamond_elevator.name=§sDiamentowa Winda\n§9Zasięg: 34 Bloki\n§cOdporna na Wybuchy 
+tile.ajr:netherite_elevator.name=§8Netherytowa Winda\n§9Zasięg: 40 Bloków\n§cOdporna na Wybuchy
+
+## Reinforced Elevators
+tile.ajr:copper_elevator_reinforced.name=§nWzmocniona Miedziana Winda\n§9Zasięg: 12 Bloków\n§cOdporna na Wybuchy 
+tile.ajr:iron_elevator_reinforced.name=§iWzmocniona Żelazna Winda\n§9Zasięg: 20 Bloków\n§cOdporna na Wybuchy 
+tile.ajr:gold_elevator_reinforced.name=§pWzmocniona Złota Winda\n§9Zasięg: 28 Bloków\n§cOdporna na Wybuchy
+
+## Scripting
+script.error.elevator_blocked=<Simple Elevators: Błąd Skryptu> §cWinda docelowa jest zablokowana. Potrzebujesz 2 bloków wolnej przestrzeni nad nią.\n§6Wskazówka: Możesz umieścić blok na windzie jako podłogę, ale pozostaw 2 bloki wolnej przestrzeni nad tym blokiem.

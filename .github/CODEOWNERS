@@ -1,0 +1,12 @@
+# Default owner
+* @ajr-uribe
+
+# Source languages: only the maintainer can approve changes here
+/bp/texts/en_US.lang @ajr-uribe
+/rp/texts/en_US.lang @ajr-uribe
+/bp/texts/es_MX.lang @ajr-uribe
+/rp/texts/es_MX.lang @ajr-uribe
+
+# Add reviewers for specific languages as translators earn the Verified role
+# /bp/texts/fr_FR.lang @some-translator
+# /rp/texts/fr_FR.lang @some-translator
