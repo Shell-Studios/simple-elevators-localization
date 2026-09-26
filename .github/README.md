@@ -25,9 +25,9 @@ rp/
       └── ...
 ```
 
-- **`bp/texts/**`\*\* — Behavior Pack strings
+- **`bp/texts/**`** — Behavior Pack strings
   - You can only add `pack.name` and `pack.description` here
-- **`rp/texts/**`\*\* — Resource Pack strings
+- **`rp/texts/**`** — Resource Pack strings
   - General translation keys:
     - **tile.\<block_id\>.name** — Block Names
     - **ajr:itemGroup.name.\<group\>** — Item Group Names
