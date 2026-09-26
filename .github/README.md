@@ -45,8 +45,24 @@ Once translations are reviewed and approved, these folders are merged into the m
 |  Code   | Language              | Status              |
 | :-----: | :-------------------- | :------------------ |
 | `en_US` | English (US) (source) | Complete            |
-| `es_ES` | Spanish (source)      | Complete            |
+| `es_MX` | Spanish (MX) (source) | Complete            |
+| `en_GB` | English (UK)          | Complete            |
+| `es_ES` | Spanish (ES)          | Complete            |
+| `de_DE` | German                | Needs native review |
+| `fr_FR` | French                | Needs native review |
+| `it_IT` | Italian               | Needs native review |
+| `pl_PL` | Polish                | Needs native review |
 | `pt_BR` | Portuguese (BR)       | Needs native review |
+| `pt_PT` | Portuguese (PT)       | Needs native review |
+| `ja_JP` | Japanese              | Missing             |
+| `ko_KR` | Korean                | Missing             |
+| `nl_NL` | Dutch                 | Missing             |
+| `ru_RU` | Russian               | Missing             |
+| `sv_SE` | Swedish               | Missing             |
+| `tr_TR` | Turkish               | Missing             |
+| `uk_UA` | Ukrainian             | Missing             |
+| `zh_CN` | Chinese (Simplified)  | Missing             |
+| `zh_TW` | Chinese (Traditional) | Missing             |
 
 > [!NOTE]
 > **Needs native review** means a translation file already exists, but it was generated with machine translation (Google Translate) and has not been reviewed by a native speaker. If you speak this language fluently, your help would be especially valuable.
