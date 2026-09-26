@@ -8,13 +8,13 @@ ajr:itemGroup.name.reinforced_elevators=Güçlendirilmiş Asansör
 tile.ajr:copper_elevator.name=§nBakır Asansör\n§9Menzil: 8 Blok
 tile.ajr:iron_elevator.name=§iDemir Asansör\n§9Menzil: 16 Blok 
 tile.ajr:gold_elevator.name=§pAltın Asansör\n§9Menzil: 24 Blok
-tile.ajr:diamond_elevator.name=§sDiamond Elevator\n§9Menzil: 34 Blok\n§cPatlama Dirençli
-tile.ajr:netherite_elevator.name=§8Netherite Elevator\n§9Menzil: 40 Blok\n§cPatlama Dirençli
+tile.ajr:diamond_elevator.name=§sElmas Asansör\n§9Menzil: 34 Blok\n§cPatlama Dirençli
+tile.ajr:netherite_elevator.name=§8Netherite Asansör\n§9Menzil: 40 Blok\n§cPatlama Dirençli
 
 ## Reinforced Elevators
-tile.ajr:copper_elevator_reinforced.name=§nReinforced Copper Elevator\n§9Menzil: 12 Blok\n§cPatlama Dirençli
-tile.ajr:iron_elevator_reinforced.name=§iReinforced Iron Elevator\n§9Menzil: 20 Blok\n§cPatlama Dirençli
-tile.ajr:gold_elevator_reinforced.name=§pReinforced Gold Elevator\n§9Menzil: 28 Blok\n§cPatlama Dirençli
+tile.ajr:copper_elevator_reinforced.name=§nGüçlendirilmiş Bakır Asansör\n§9Menzil: 12 Blok\n§cPatlama Dirençli
+tile.ajr:iron_elevator_reinforced.name=§iGüçlendirilmiş Demir Asansör\n§9Menzil: 20 Blok\n§cPatlama Dirençli
+tile.ajr:gold_elevator_reinforced.name=§pGüçlendirilmiş Altın Asansör\n§9Menzil: 28 Blok\n§cPatlama Dirençli
 
 ## Scripting
 script.error.elevator_blocked=<Simple Elevators: Kod Hatası> §cHedef asansör tıkalı, blok üzerinde 2 blokluk boş alana ihtiyacınız var.\n§6İpucu: Asansörün üzerine blok yerleştirebilirsiniz, ancak asansör bloğunun üzerinde 2 blokluk boş alan bırakın.
