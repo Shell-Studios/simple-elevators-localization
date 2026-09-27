@@ -1,0 +1,46 @@
+name: Documents Synchronizer
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'documents/*.md'
+      - '.github/README.md'
+      - '.github/CONTRIBUTING.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Sync Markdown Documents Content
+    if: github.ref == 'refs/heads/master' && github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Run Synchronizers
+        run: |
+          npm run sync:table
+          npm run sync:ft
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add -A
+            git commit -m "chore: sync documents (auto) [skip ci]"
+            git push
+          fi

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Community localization files for the Simple Elevators add-on. Add or improve your language.",
   "scripts": {
-    "sync": "node ./scripts/sync-texts.js"
+    "sync:": "node ./scripts/sync-texts.js",
+    "sync:table": "node ./scripts/md-synchro.js docs/LANGS-TABLE.md .github/README.md .github/CONTRIBUTING.md",
+    "sync:ft": "node ./scripts/md-synchro.js docs/FEATURED-TRANSLATORS.md .github/README.md"
   },
   "author": "ajr-uribe",
   "license": "MIT",

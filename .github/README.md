@@ -40,36 +40,47 @@ Once translations are reviewed and approved, these folders are merged into the m
 
 ---
 
-## Currently supported languages
+<!--LANGS-TABLE-->
+# Language support
 
-|  Code   | Language              | Status              |
-| :-----: | :-------------------- | :------------------ |
-| `en_US` | English (US) (source) | Complete            |
-| `es_MX` | Spanish (MX) (source) | Complete            |
-| `en_GB` | English (UK)          | Complete            |
-| `es_ES` | Spanish (ES)          | Complete            |
-| `de_DE` | German                | Needs native review |
-| `fr_FR` | French                | Needs native review |
-| `it_IT` | Italian               | Needs native review |
-| `pl_PL` | Polish                | Needs native review |
-| `pt_BR` | Portuguese (BR)       | Needs native review |
-| `pt_PT` | Portuguese (PT)       | Needs native review |
-| `ja_JP` | Japanese              | Missing             |
-| `ko_KR` | Korean                | Missing             |
-| `nl_NL` | Dutch                 | Missing             |
-| `ru_RU` | Russian               | Missing             |
-| `sv_SE` | Swedish               | Missing             |
-| `tr_TR` | Turkish               | Missing             |
-| `uk_UA` | Ukrainian             | Missing             |
-| `zh_CN` | Chinese (Simplified)  | Missing             |
-| `zh_TW` | Chinese (Traditional) | Missing             |
+| Code    | Language              | Type              | Status  |
+|---------|-----------------------|-------------------|---------|
+| `en_US` | English (US)          | Source            | Present |
+| `es_MX` | Mexican Spanish       | Source            | Present |
+| `en_GB` | English (UK)          | Regional variant  | Present |
+| `es_ES` | Spanish (Spain)       | Regional variant  | Present |
+| `tr_TR` | Turkish               | Target            | Present |
+| `de_DE` | German                | Target            | MT      |
+| `fr_FR` | French (France)       | Target            | MT      |
+| `it_IT` | Italian               | Target            | MT      |
+| `pl_PL` | Polish                | Target            | MT      |
+| `pt_BR` | Brazilian Portuguese  | Target            | MT      |
+| `pt_PT` | Portuguese (Portugal) | Target            | MT      |
+| `ja_JP` | Japanese              | Target            | Missing |
+| `ko_KR` | Korean                | Target            | Missing |
+| `nl_NL` | Dutch                 | Target            | Missing |
+| `ru_RU` | Russian               | Target            | Missing |
+| `sv_SE` | Swedish               | Target            | Missing |
+| `uk_UA` | Ukrainian             | Target            | Missing |
+| `zh_CN` | Chinese (Simplified)  | Target            | Missing |
+| `zh_TW` | Chinese (Traditional) | Target            | Missing |
+
+**Status legend**
+
+- **Present** — A translation exists and has been reviewed. Safe to use.
+- **MT** — Machine-translated with Google Translate. Functional but pending review by a native speaker.
+- **Missing** — No translation file exists yet. You can add it by following the contribution guide.
+
+If your language is not listed here, check the [Bedrock OSS documentation](https://wiki.bedrock.dev/text/text-intro#vanilla-languages) for the correct code before opening a PR. Only vanilla language codes are accepted unless the language is registered with a custom `language_names.json`.
 
 > [!NOTE]
-> **Needs native review** means a translation file already exists, but it was generated with machine translation (Google Translate) and has not been reviewed by a native speaker. If you speak this language fluently, your help would be especially valuable.
+> Some locales are close enough that duplicating a file is acceptable instead of writing it twice. This repository already does this for `en_US`/`en_GB`, `es_MX`/`es_ES`, and `pt_BR`/`pt_PT`.
 >
-> Contributors who consistently deliver high-quality translations may be granted the **Verified Translator** role on our Discord server. This role is granted **in addition to** the **Contributor** role, not as a replacement. Consistent contributors may also be invited to join the staff team (along with its private Discord server) if they are interested. The Contributor role gives you access to a private channel, early previews of upcoming projects, and priority for beta testing.
+> If you duplicate a peer language, another contributor can later adapt it to their region. For example, if you translate `pt_PT` and copy it to `pt_BR`, someone from Brazil can adjust `pt_BR` to match Brazilian usage.
 
-If your language is not listed, you can add it yourself. Check the [contribution guide](./CONTRIBUTING.md) for details.
+> [!NOTE]
+> Contributors who consistently deliver high-quality translations may be granted the **Verified Translator** role on our Discord server. This role is granted **in addition to** the **Contributor** role, not as a replacement. Consistent contributors may also be invited to join the staff team (along with its private Discord server) if they are interested. The Verified Translator role gives you access to a private channel, early previews of upcoming projects, and priority for beta testing.
+<!--LANGS-TABLE-->
 
 ---
 
@@ -105,11 +116,14 @@ Thanks to all translators who make it possible for Simple Elevators to reach mor
 
 - **[@ajr-uribe](https://github.com/ajr-uribe)** — Add-on creator. Maintains the `es_MX` and `en_US` source strings.
 
+<!--FEATURED-TRANSLATORS-->
 ### Featured Translators
 
-| User | Language | Contribution |
-|------|----------|--------------|
-| *(pending native reviewers)* | | |
+| User                                             | Language          | Contribution              |
+| ------------------------------------------------ | ----------------- | ------------------------- |
+| [@TheKaplumbag](https://github.com/TheKaplumbag) | Turkish (`tr_TR`) | Added Turkish translation |
+
+<!--FEATURED-TRANSLATORS-->
 
 ### Machine-Translated Languages
 
