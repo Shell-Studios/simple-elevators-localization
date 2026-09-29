@@ -2,7 +2,7 @@ pack.description=Dünyanıza asansör blokları ekleyin ve sıkıcı, yavaş mer
 
 ## Groups
 ajr:itemGroup.name.elevators=Asansörler
-ajr:itemGroup.name.reinforced_elevators=Güçlendirilmiş Asansör
+ajr:itemGroup.name.reinforced_elevators=Güçlendirilmiş Asansörler
 
 ## Elevators
 tile.ajr:copper_elevator.name=§nBakır Asansör\n§9Menzil: 8 Blok
@@ -17,4 +17,4 @@ tile.ajr:iron_elevator_reinforced.name=§iGüçlendirilmiş Demir Asansör\n§9M
 tile.ajr:gold_elevator_reinforced.name=§pGüçlendirilmiş Altın Asansör\n§9Menzil: 28 Blok\n§cPatlama Dirençli
 
 ## Scripting
-script.error.elevator_blocked=<Simple Elevators: Kod Hatası> §cHedef asansör tıkalı, blok üzerinde 2 blokluk boş alana ihtiyacınız var.\n§6İpucu: Asansörün üzerine blok yerleştirebilirsiniz, ancak asansör bloğunun üzerinde 2 blokluk boş alan bırakın.
+script.error.elevator_blocked=<Simple Elevators: Script Error> §cHedef asansör tıkalı, blok üzerinde 2 blokluk boş alana ihtiyacınız var.\n§6İpucu: Asansörün üzerine blok yerleştirebilirsiniz, ancak asansör bloğunun üzerinde 2 blokluk boş alan bırakın.
