@@ -1,24 +1,20 @@
-pack.description=Adicione blocos de elevador ao seu mundo e esqueça as escadas lentas e entediantes! (Feito pela Shell Studios)
+pack.description=Adicione blocos de elevador ao seu mundo e esqueça as escadas chatas e lentas! (Feito por Shell Studios)
 
 ## Groups
-
 ajr:itemGroup.name.elevators=Elevadores
 ajr:itemGroup.name.reinforced_elevators=Elevadores Reforçados
 
 ## Elevators
-
 tile.ajr:copper_elevator.name=§nElevador de Cobre\n§9Alcance: 8 Blocos
 tile.ajr:iron_elevator.name=§iElevador de Ferro\n§9Alcance: 16 Blocos
 tile.ajr:gold_elevator.name=§pElevador de Ouro\n§9Alcance: 24 Blocos
-tile.ajr:diamond_elevator.name=§sElevador de Diamante\n§9Alcance: 34 Blocos\n§cResistente a Explosões
-tile.ajr:netherite_elevator.name=§8Elevador de Netherita\n§9Alcance: 40 Blocos\n§cResistente a Explosões
+tile.ajr:diamond_elevator.name=§sElevador de Diamante\n§9Alcance: 34 Blocos\n§cResistente a explosões
+tile.ajr:netherite_elevator.name=§8Elevador de Netherita\n§9Alcance: 40 Blocos\n§cResistente a explosões
 
 ## Reinforced Elevators
-
-tile.ajr:copper_elevator_reinforced.name=§nElevador de Cobre Reforçado\n§9Alcance: 12 Blocos\n§cResistente a Explosões
-tile.ajr:iron_elevator_reinforced.name=§iElevador de Ferro Reforçado\n§9Alcance: 20 Blocos\n§cResistente a Explosões
-tile.ajr:gold_elevator_reinforced.name=§pElevador de Ouro Reforçado\n§9Alcance: 28 Blocos\n§cResistente a Explosões
+tile.ajr:copper_elevator_reinforced.name=§nElevador de Cobre Reforçado\n§9Alcance: 12 Blocos\n§cResistente a explosões
+tile.ajr:iron_elevator_reinforced.name=§iElevador de Ferro Reforçado\n§9Alcance: 20 Blocos\n§cResistente a explosões
+tile.ajr:gold_elevator_reinforced.name=§pElevador de Ouro Reforçado\n§9Alcance: 28 Blocos\n§cResistente a explosões
 
 ## Scripting
-
-script.error.elevator_blocked=<Simple Elevators: Erro de Script> §cO elevador de destino está bloqueado. Você precisa de 2 blocos de espaço livre acima dele.\n§6Dica: Você pode colocar um bloco sobre o elevador como piso, mas deixe 2 blocos de espaço livre acima desse bloco.
+script.error.elevator_blocked=<Simple Elevators: Script Error> §cO elevador de destino está bloqueado. Você precisa de 2 blocos de ar livres acima dele.\n§6Dica: Você pode colocar um bloco sobre o elevador como piso, mas deixe 2 blocos de ar livres acima desse bloco.

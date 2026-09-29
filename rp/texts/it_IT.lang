@@ -1,20 +1,20 @@
-pack.description=Aggiungi blocchi ascensore al tuo mondo e dimentica le scale noiose e lente! (Realizzato da Shell Studios)
+pack.description=Aggiungi blocchi ascensore al tuo mondo e dimentica le noiose e lente scale! (Creato da Shell Studios)
 
 ## Groups
 ajr:itemGroup.name.elevators=Ascensori
 ajr:itemGroup.name.reinforced_elevators=Ascensori Rinforzati
 
 ## Elevators
-tile.ajr:copper_elevator.name=§nAscensore in Rame\n§9Portata: 8 Blocchi
-tile.ajr:iron_elevator.name=§iAscensore in Ferro\n§9Portata: 16 Blocchi
-tile.ajr:gold_elevator.name=§pAscensore in Oro\n§9Portata: 24 Blocchi
-tile.ajr:diamond_elevator.name=§sAscensore in Diamante\n§9Portata: 34 Blocchi\n§cResistente alle Esplosioni
-tile.ajr:netherite_elevator.name=§8Ascensore in Netherite\n§9Portata: 40 Blocchi\n§cResistente alle Esplosioni
+tile.ajr:copper_elevator.name=§nAscensore di Rame\n§9Raggio: 8 Blocchi
+tile.ajr:iron_elevator.name=§iAscensore di Ferro\n§9Raggio: 16 Blocchi
+tile.ajr:gold_elevator.name=§pAscensore d'Oro\n§9Raggio: 24 Blocchi
+tile.ajr:diamond_elevator.name=§sAscensore di Diamante\n§9Raggio: 34 Blocchi\n§cResistente alle esplosioni
+tile.ajr:netherite_elevator.name=§8Ascensore di Netherite\n§9Raggio: 40 Blocchi\n§cResistente alle esplosioni
 
 ## Reinforced Elevators
-tile.ajr:copper_elevator_reinforced.name=§nAscensore in Rame Rinforzato\n§9Portata: 12 Blocchi\n§cResistente alle Esplosioni
-tile.ajr:iron_elevator_reinforced.name=§iAscensore in Ferro Rinforzato\n§9Portata: 20 Blocchi\n§cResistente alle Esplosioni
-tile.ajr:gold_elevator_reinforced.name=§pAscensore in Oro Rinforzato\n§9Portata: 28 Blocchi\n§cResistente alle Esplosioni
+tile.ajr:copper_elevator_reinforced.name=§nAscensore di Rame Rinforzato\n§9Raggio: 12 Blocchi\n§cResistente alle esplosioni
+tile.ajr:iron_elevator_reinforced.name=§iAscensore di Ferro Rinforzato\n§9Raggio: 20 Blocchi\n§cResistente alle esplosioni
+tile.ajr:gold_elevator_reinforced.name=§pAscensore d'Oro Rinforzato\n§9Raggio: 28 Blocchi\n§cResistente alle esplosioni
 
 ## Scripting
-script.error.elevator_blocked=<Simple Elevators: Errore dello Script> §cL'ascensore di destinazione è bloccato. Sono necessari 2 blocchi di spazio libero sopra di esso.\n§6Suggerimento: Puoi posizionare un blocco sopra l'ascensore come pavimento, ma lascia 2 blocchi di spazio libero sopra quel blocco.
+script.error.elevator_blocked=<Simple Elevators: Script Error> §cL'ascensore di destinazione è bloccato. Hai bisogno di 2 blocchi d'aria liberi sopra.\n§6Consiglio: Puoi mettere un blocco sopra l'ascensore come pavimento, ma lascia 2 blocchi d'aria liberi sopra quel blocco.

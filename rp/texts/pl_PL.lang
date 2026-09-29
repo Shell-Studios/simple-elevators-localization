@@ -1,20 +1,20 @@
-pack.description=Dodaj windy do swojego świata i zapomnij o nudnych, powolnych schodach! (Stworzone przez Shell Studios)
+pack.description=Dodaj bloki wind do swojego świata i zapomnij o nudnych i wolnych schodach! (Stworzone przez Shell Studios)
 
 ## Groups
-ajr:itemGroup.name.elevators=Windy 
-ajr:itemGroup.name.reinforced_elevators=Wzmocnione Windy
+ajr:itemGroup.name.elevators=Windy
+ajr:itemGroup.name.reinforced_elevators=Wzmocnione windy
 
 ## Elevators
-tile.ajr:copper_elevator.name=§nMiedziana Winda\n§9Zasięg: 8 Bloków 
-tile.ajr:iron_elevator.name=§iŻelazna Winda\n§9Zasięg: 16 Bloków 
-tile.ajr:gold_elevator.name=§pZłota Winda\n§9Zasięg: 24 Bloki 
-tile.ajr:diamond_elevator.name=§sDiamentowa Winda\n§9Zasięg: 34 Bloki\n§cOdporna na Wybuchy 
-tile.ajr:netherite_elevator.name=§8Netherytowa Winda\n§9Zasięg: 40 Bloków\n§cOdporna na Wybuchy
+tile.ajr:copper_elevator.name=§nMiedziana winda\n§9Zasięg: 8 bloków
+tile.ajr:iron_elevator.name=§iŻelazna winda\n§9Zasięg: 16 bloków
+tile.ajr:gold_elevator.name=§pZłota winda\n§9Zasięg: 24 bloki
+tile.ajr:diamond_elevator.name=§sDiamentowa winda\n§9Zasięg: 34 bloki\n§cOdporna na eksplozje
+tile.ajr:netherite_elevator.name=§8Netheritowa winda\n§9Zasięg: 40 bloków\n§cOdporna na eksplozje
 
 ## Reinforced Elevators
-tile.ajr:copper_elevator_reinforced.name=§nWzmocniona Miedziana Winda\n§9Zasięg: 12 Bloków\n§cOdporna na Wybuchy 
-tile.ajr:iron_elevator_reinforced.name=§iWzmocniona Żelazna Winda\n§9Zasięg: 20 Bloków\n§cOdporna na Wybuchy 
-tile.ajr:gold_elevator_reinforced.name=§pWzmocniona Złota Winda\n§9Zasięg: 28 Bloków\n§cOdporna na Wybuchy
+tile.ajr:copper_elevator_reinforced.name=§nWzmocniona miedziana winda\n§9Zasięg: 12 bloków\n§cOdporna na eksplozje
+tile.ajr:iron_elevator_reinforced.name=§iWzmocniona żelazna winda\n§9Zasięg: 20 bloków\n§cOdporna na eksplozje
+tile.ajr:gold_elevator_reinforced.name=§pWzmocniona złota winda\n§9Zasięg: 28 bloków\n§cOdporna na eksplozje
 
 ## Scripting
-script.error.elevator_blocked=<Simple Elevators: Błąd Skryptu> §cWinda docelowa jest zablokowana. Potrzebujesz 2 bloków wolnej przestrzeni nad nią.\n§6Wskazówka: Możesz umieścić blok na windzie jako podłogę, ale pozostaw 2 bloki wolnej przestrzeni nad tym blokiem.
+script.error.elevator_blocked=<Simple Elevators: Script Error> §cDocelowa winda jest zablokowana. Potrzebujesz 2 wolnych bloków powietrza nad nią.\n§6Wskazówka: Możesz postawić blok na windzie jako podłogę, ale zostaw 2 wolne bloki powietrza nad tym blokiem.
