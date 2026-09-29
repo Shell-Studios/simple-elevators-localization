@@ -21,6 +21,7 @@ Edit them here instead, then run the sync script.
 | `tr_TR` | Turkish               | Target            | Present |
 | `de_DE` | German                | Target            | MT      |
 | `fr_FR` | French (France)       | Target            | MT      |
+| `fr_CA` | French (Canada)       | Target            | MT      |
 | `it_IT` | Italian               | Target            | MT      |
 | `pl_PL` | Polish                | Target            | MT      |
 | `pt_BR` | Brazilian Portuguese  | Target            | MT      |
