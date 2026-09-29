@@ -41,29 +41,31 @@ Once translations are reviewed and approved, these folders are merged into the m
 ---
 
 <!--LANGS-TABLE-->
+
 # Language support
 
-| Code    | Language              | Type              | Status  |
-|---------|-----------------------|-------------------|---------|
-| `en_US` | English (US)          | Source            | Present |
-| `es_MX` | Mexican Spanish       | Source            | Present |
-| `en_GB` | English (UK)          | Regional variant  | Present |
-| `es_ES` | Spanish (Spain)       | Regional variant  | Present |
-| `tr_TR` | Turkish               | Target            | Present |
-| `de_DE` | German                | Target            | MT      |
-| `fr_FR` | French (France)       | Target            | MT      |
-| `it_IT` | Italian               | Target            | MT      |
-| `pl_PL` | Polish                | Target            | MT      |
-| `pt_BR` | Brazilian Portuguese  | Target            | MT      |
-| `pt_PT` | Portuguese (Portugal) | Target            | MT      |
-| `ja_JP` | Japanese              | Target            | Missing |
-| `ko_KR` | Korean                | Target            | Missing |
-| `nl_NL` | Dutch                 | Target            | Missing |
-| `ru_RU` | Russian               | Target            | Missing |
-| `sv_SE` | Swedish               | Target            | Missing |
-| `uk_UA` | Ukrainian             | Target            | Missing |
-| `zh_CN` | Chinese (Simplified)  | Target            | Missing |
-| `zh_TW` | Chinese (Traditional) | Target            | Missing |
+| Code    | Language              | Type             | Status  |
+| ------- | --------------------- | ---------------- | ------- |
+| `en_US` | English (US)          | Source           | Present |
+| `es_MX` | Mexican Spanish       | Source           | Present |
+| `en_GB` | English (UK)          | Regional variant | Present |
+| `es_ES` | Spanish (Spain)       | Regional variant | Present |
+| `tr_TR` | Turkish               | Target           | Present |
+| `de_DE` | German                | Target           | MT      |
+| `fr_FR` | French (France)       | Target           | MT      |
+| `fr_CA` | French (Canada)       | Regional Variant | MT      |
+| `it_IT` | Italian               | Target           | MT      |
+| `pl_PL` | Polish                | Target           | MT      |
+| `pt_BR` | Brazilian Portuguese  | Target           | MT      |
+| `pt_PT` | Portuguese (Portugal) | Regional Variant | MT      |
+| `ja_JP` | Japanese              | Target           | Missing |
+| `ko_KR` | Korean                | Target           | Missing |
+| `nl_NL` | Dutch                 | Target           | Missing |
+| `ru_RU` | Russian               | Target           | Missing |
+| `sv_SE` | Swedish               | Target           | Missing |
+| `uk_UA` | Ukrainian             | Target           | Missing |
+| `zh_CN` | Chinese (Simplified)  | Target           | Missing |
+| `zh_TW` | Chinese (Traditional) | Target           | Missing |
 
 **Status legend**
 
@@ -80,6 +82,7 @@ If your language is not listed here, check the [Bedrock OSS documentation](https
 
 > [!NOTE]
 > Contributors who consistently deliver high-quality translations may be granted the **Verified Translator** role on our Discord server. This role is granted **in addition to** the **Contributor** role, not as a replacement. Consistent contributors may also be invited to join the staff team (along with its private Discord server) if they are interested. The Verified Translator role gives you access to a private channel, early previews of upcoming projects, and priority for beta testing.
+
 <!--LANGS-TABLE-->
 
 ---

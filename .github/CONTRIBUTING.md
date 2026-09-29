@@ -13,6 +13,7 @@ Please read these points before opening a Pull Request:
 - You cannot modify the add-on's source code. This repository only contains `.lang` files.
 - Do not translate the **keys**, only the **values** (see [File format](#file-format)).
 - Do not remove or translate **placeholders** (`%s`, `%1`) or **color codes** (`§a`, `§b`, `§l`, `§r`). You may reorder placeholders within a string if your language requires it.
+- Do not translate the text inside **angle brackets** such as `<Simple Elevators: Script Error>`. These are message tags used by the add-on's scripts and must stay in English so they remain consistent across all languages.
 - Keep files encoded in **UTF-8 without BOM**.
 - Regional variants (`en_GB`, `es_ES`) are open to contribution with more flexibility. Minor adjustments are allowed if they improve accuracy for those locales.
 
@@ -205,6 +206,7 @@ key=translated value
 - **Keys** are the part before `=`. Do not translate or rename them.
 - **Placeholders** such as `%s` or `%1` must remain in the string. Their order may be changed to fit your language's grammar. For example, `%1 is blocked` and `El %1 está bloqueado` are both valid, but the placeholder itself must not be removed or renamed. (No placeholders are currently in use, but this rule applies for future strings.)
 - **Color codes** such as `§a`, `§b`, `§l`, `§r` must remain in the string. Like placeholders, their position may be adjusted if your language needs it, but the codes themselves must not be changed, removed, or translated.
+- **Message tags** such as `<Simple Elevators: Script Error>` must not be translated. These tags are used by the add-on's scripts to identify messages and must remain identical in every language. Only the text that follows the tag should be translated.
 - **Comments** start with `##` and are ignored by the game. Keep the existing comments so other contributors can read the files easily.
 - Do not use `=` inside a translated value. Use `\=` only if strictly necessary.
 - Keep the file in **UTF-8 without BOM**.
@@ -231,32 +233,36 @@ tile.ajr:copper_elevator.name=§nCopper Elevator\n§9Range: 8 Blocks
 script.error.elevator_blocked=<Simple Elevators: Script Error> §cThe destination elevator is blocked. You need 2 free air blocks above it.\n§6Tip: You can place a block on top of the elevator as a floor, but leave 2 free air blocks above that block.
 ```
 
+In the `script.error.elevator_blocked` example above, only the part after `<Simple Elevators: Script Error>` is translated. The tag itself stays exactly as it is in every language.
+
 ---
 
 <!--LANGS-TABLE-->
+
 # Language support
 
-| Code    | Language              | Type              | Status  |
-|---------|-----------------------|-------------------|---------|
-| `en_US` | English (US)          | Source            | Present |
-| `es_MX` | Mexican Spanish       | Source            | Present |
-| `en_GB` | English (UK)          | Regional variant  | Present |
-| `es_ES` | Spanish (Spain)       | Regional variant  | Present |
-| `tr_TR` | Turkish               | Target            | Present |
-| `de_DE` | German                | Target            | MT      |
-| `fr_FR` | French (France)       | Target            | MT      |
-| `it_IT` | Italian               | Target            | MT      |
-| `pl_PL` | Polish                | Target            | MT      |
-| `pt_BR` | Brazilian Portuguese  | Target            | MT      |
-| `pt_PT` | Portuguese (Portugal) | Target            | MT      |
-| `ja_JP` | Japanese              | Target            | Missing |
-| `ko_KR` | Korean                | Target            | Missing |
-| `nl_NL` | Dutch                 | Target            | Missing |
-| `ru_RU` | Russian               | Target            | Missing |
-| `sv_SE` | Swedish               | Target            | Missing |
-| `uk_UA` | Ukrainian             | Target            | Missing |
-| `zh_CN` | Chinese (Simplified)  | Target            | Missing |
-| `zh_TW` | Chinese (Traditional) | Target            | Missing |
+| Code    | Language              | Type             | Status  |
+| ------- | --------------------- | ---------------- | ------- |
+| `en_US` | English (US)          | Source           | Present |
+| `es_MX` | Mexican Spanish       | Source           | Present |
+| `en_GB` | English (UK)          | Regional variant | Present |
+| `es_ES` | Spanish (Spain)       | Regional variant | Present |
+| `tr_TR` | Turkish               | Target           | Present |
+| `de_DE` | German                | Target           | MT      |
+| `fr_FR` | French (France)       | Target           | MT      |
+| `fr_CA` | French (Canada)       | Regional Variant | MT      |
+| `it_IT` | Italian               | Target           | MT      |
+| `pl_PL` | Polish                | Target           | MT      |
+| `pt_BR` | Brazilian Portuguese  | Target           | MT      |
+| `pt_PT` | Portuguese (Portugal) | Regional Variant | MT      |
+| `ja_JP` | Japanese              | Target           | Missing |
+| `ko_KR` | Korean                | Target           | Missing |
+| `nl_NL` | Dutch                 | Target           | Missing |
+| `ru_RU` | Russian               | Target           | Missing |
+| `sv_SE` | Swedish               | Target           | Missing |
+| `uk_UA` | Ukrainian             | Target           | Missing |
+| `zh_CN` | Chinese (Simplified)  | Target           | Missing |
+| `zh_TW` | Chinese (Traditional) | Target           | Missing |
 
 **Status legend**
 
@@ -273,6 +279,7 @@ If your language is not listed here, check the [Bedrock OSS documentation](https
 
 > [!NOTE]
 > Contributors who consistently deliver high-quality translations may be granted the **Verified Translator** role on our Discord server. This role is granted **in addition to** the **Contributor** role, not as a replacement. Consistent contributors may also be invited to join the staff team (along with its private Discord server) if they are interested. The Verified Translator role gives you access to a private channel, early previews of upcoming projects, and priority for beta testing.
+
 <!--LANGS-TABLE-->
 
 ---
@@ -302,7 +309,7 @@ Once you open a Pull Request:
 
 - Correct spelling and grammar in the target language.
 - Compliance with the `.lang` format.
-- Keys, placeholders, and color codes were not modified.
+- Keys, placeholders, color codes, and message tags were not modified.
 - Consistent use of terminology.
 - `languages.json` was updated in the RP pack if a new language was added.
 - `bp/texts/` is in sync with `rp/texts/` after running the sync script.
